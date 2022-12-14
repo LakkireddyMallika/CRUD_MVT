@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>DISPLAY_ACCESSRECORDS  DATA</h1>
+        <table border="3px" >
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+            {% for i in LAO %}
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.date }}</td>
+            </tr>
+            {% endfor %} 
+        </table>
+    </center>
+
+</body>
+</html>
